@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Midiana Nurussahar - IT Student & Web Developer Enthusiast</title>
+<meta name="description" content="Portofolio Midiana Nurussahar, mahasiswa D3 Teknologi Informasi Politeknik Negeri Madiun: web, mobile, dan keamanan siber.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#1a1033;
+  --surface2:rgba(255,255,255,.11);
+  --text:#f6f1fb;
+  --muted:rgba(246,241,251,.74);
+  --accent:#c4b5fd;
+  --accent2:#f9a8d4;
+  --g1:#8b5cf6;
+  --g2:#ec4899;
+  --line:rgba(255,255,255,.16);
+  --dark:rgba(12,6,28,.62)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{outline-offset:3px}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent2)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.grad{background:linear-gradient(90deg,#c4b5fd,#f9a8d4);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* ===== LATAR GLOBAL ===== */
+body::before{content:"";position:fixed;inset:0;z-index:-3;
+  background:
+    radial-gradient(55% 70% at 15% 25%,#7c3aed 0%,transparent 62%),
+    radial-gradient(50% 65% at 88% 30%,#ec4899 0%,transparent 62%),
+    radial-gradient(60% 70% at 50% 110%,#2563eb 0%,transparent 66%),#1a1033;
+  background-size:160% 160%;animation:mesh 16s ease-in-out infinite alternate}
+@keyframes mesh{0%{background-position:0% 0%}100%{background-position:100% 100%}}
+body::after{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);
+  background-size:48px 48px;
+  -webkit-mask-image:radial-gradient(ellipse at 50% 40%,#000 20%,transparent 85%);
+  mask-image:radial-gradient(ellipse at 50% 40%,#000 20%,transparent 85%)}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:-1;opacity:.8;pointer-events:none}
+#progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--g1),var(--g2));z-index:30}
+
+/* ===== NAV ===== */
+nav{position:sticky;top:0;z-index:20;background:rgba(20,10,40,.6);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px;gap:16px}
+nav b{font-size:1.25rem;font-weight:800;letter-spacing:-.01em}
+.menu{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.menu::-webkit-scrollbar{display:none}
+.menu a{color:var(--muted);text-decoration:none;font-size:.92rem;font-weight:500;padding:8px 14px;border-radius:99px;white-space:nowrap;transition:background .2s,color .2s}
+.menu a:hover{color:#fff;background:var(--surface2)}
+.menu a.active{color:#fff;background:linear-gradient(90deg,var(--g1),var(--g2));font-weight:600}
+@media(max-width:560px){nav b{display:none}.menu{width:100%;justify-content:space-between}.menu a{padding:8px 10px;font-size:.82rem}}
+
+/* ===== HERO ===== */
+.hero{position:relative;display:flex;align-items:center;min-height:calc(100vh - 64px);min-height:calc(100svh - 64px);overflow:hidden;color:#fff}
+.fl{position:absolute;z-index:1;font-family:ui-monospace,Consolas,monospace;font-weight:700;color:rgba(255,255,255,.45);text-shadow:0 0 14px rgba(244,114,182,.7);user-select:none;pointer-events:none;animation:fl 9s ease-in-out infinite}
+@keyframes fl{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-18px) rotate(5deg)}}
+@media(max-width:720px){.fl{display:none}}
+.wave{position:absolute;left:0;bottom:-1px;width:100%;height:80px;fill:var(--dark);z-index:2;display:block}
+
+.hero .wrap{position:relative;z-index:2;display:flex;gap:64px;align-items:center;justify-content:center;flex-wrap:wrap;padding-top:48px;padding-bottom:130px}
+.photo-box{position:relative;width:260px;height:260px;flex:none;filter:drop-shadow(0 0 40px rgba(236,72,153,.55))}
+.photo-box::before{content:"";position:absolute;inset:-10px;border-radius:50%;background:conic-gradient(#a78bfa,#f472b6,#38bdf8,#a78bfa);animation:spin 6s linear infinite}
+.photo-box::after{content:"";position:absolute;inset:-4px;border-radius:50%;background:#1a1033}
+.photo{position:absolute;inset:0;border-radius:50%;overflow:hidden;z-index:1;background:linear-gradient(135deg,var(--g1),var(--g2))}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-text{flex:1 1 380px;max-width:600px}
+.hi{display:inline-block;padding:6px 16px;border-radius:99px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.32);font-size:.9rem;backdrop-filter:blur(6px)}
+.hero h1{margin:16px 0 6px;font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.12;font-weight:800;letter-spacing:-.02em;background:linear-gradient(90deg,#fff,#fbcfe8 55%,#c4b5fd);-webkit-background-clip:text;background-clip:text;color:transparent}
+.typed{font-size:clamp(1.15rem,3vw,1.5rem);font-weight:600;min-height:2em;color:#f5d0fe}
+.cursor{display:inline-block;width:2px;height:1.1em;background:#fff;vertical-align:-3px;margin-left:3px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.hero p{color:rgba(255,255,255,.9);margin:12px 0 28px;font-size:1.05rem;max-width:52ch}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 28px;border-radius:99px;text-decoration:none;font-weight:600;font-size:.98rem;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-3px)}
+.hero .btn.primary{background:#fff;color:#6d28d9;box-shadow:0 10px 26px rgba(0,0,0,.3)}
+.hero .btn.ghost{border:2px solid #fff;color:#fff}
+.hero .btn.ghost:hover{background:rgba(255,255,255,.18)}
+.scroll-hint{position:absolute;bottom:86px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.75);font-size:.8rem;animation:bounce 2s infinite;z-index:3;white-space:nowrap}
+@keyframes bounce{50%{transform:translate(-50%,8px)}}
+@media(max-width:720px){.hero .wrap{text-align:center;gap:32px}.hero p{margin-left:auto;margin-right:auto}.btns,.socials{justify-content:center}.scroll-hint{display:none}.photo-box{width:200px;height:200px}}
+.socials{display:flex;gap:12px;margin-top:24px}
+.socials a{width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;transition:transform .2s,background .2s}
+.socials a:hover{transform:translateY(-4px);background:#fff}
+.socials svg{width:22px;height:22px;fill:#fff;transition:fill .2s}
+.socials a:hover svg{fill:#7c3aed}
+
+/* ===== BAGIAN TENGAH ===== */
+.middle{position:relative;background:var(--dark);padding:70px 0 120px}
+
+/* ===== STATS (tanpa kotak) ===== */
+.stats{display:flex;max-width:860px;margin:0 auto;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{flex:1;text-align:center;padding:30px 10px}
+.stat+.stat{border-left:1px solid var(--line)}
+.stat b{display:block;font-size:clamp(2.2rem,6vw,3.4rem);font-weight:800;line-height:1.15}
+.stat span{color:var(--muted);font-size:.9rem;letter-spacing:.08em;text-transform:uppercase}
+
+/* ===== JUDUL SECTION ===== */
+.middle section{padding:110px 0 0}
+.head{text-align:center;margin-bottom:56px}
+.label{display:inline-flex;align-items:center;gap:14px;color:var(--accent2);font-weight:600;font-size:.82rem;letter-spacing:.2em;text-transform:uppercase}
+.label::before,.label::after{content:"";width:32px;height:2px;border-radius:2px;background:linear-gradient(90deg,transparent,var(--accent2))}
+.label::after{transform:scaleX(-1)}
+h2{font-size:clamp(1.8rem,4.5vw,2.7rem);margin:14px 0 0;font-weight:800;letter-spacing:-.02em;line-height:1.2}
+
+/* ===== TENTANG (terbuka) ===== */
+.two{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:start}
+@media(max-width:820px){.two{grid-template-columns:1fr;gap:44px}}
+.about p{margin:0 0 20px;color:var(--muted);font-size:1.05rem}
+.about p:first-child{color:var(--text);font-size:1.22rem;line-height:1.7}
+.about p:last-child{margin:0}
+.timeline{position:relative;padding-left:32px}
+.timeline::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--g1),var(--g2),transparent)}
+.tl{position:relative;margin-bottom:34px}
+.tl:last-child{margin-bottom:0}
+.tl::before{content:"";position:absolute;left:-32px;top:6px;width:16px;height:16px;border-radius:50%;background:linear-gradient(135deg,var(--g1),var(--g2));box-shadow:0 0 0 5px rgba(139,92,246,.22),0 0 16px rgba(236,72,153,.55)}
+.tl small{color:var(--accent2);font-weight:700;font-size:.76rem;text-transform:uppercase;letter-spacing:.14em}
+.tl h4{margin:2px 0;font-size:1.1rem}
+.tl p{margin:0;color:var(--muted);font-size:.93rem}
+
+/* ===== KEAHLIAN (kolom terbuka) ===== */
+.skills{display:grid;grid-template-columns:repeat(3,1fr)}
+.scol{padding:6px 36px}
+.scol:first-child{padding-left:0}
+.scol:last-child{padding-right:0}
+.scol+.scol{border-left:1px solid var(--line)}
+@media(max-width:900px){.skills{grid-template-columns:1fr}.scol,.scol:first-child,.scol:last-child{padding:0 0 34px}.scol+.scol{border-left:0;border-top:1px solid var(--line);padding-top:34px}.scol:last-child{padding-bottom:0}}
+.scol h3{margin:0 0 26px;font-size:1.15rem;display:flex;align-items:center;gap:12px}
+.scol h3 span{font-size:1.5rem}
+.skill{margin-bottom:22px}
+.skill:last-child{margin-bottom:0}
+.skill .row{display:flex;justify-content:space-between;gap:10px;font-size:.93rem;font-weight:500;margin-bottom:8px}
+.skill .row em{font-style:normal;color:var(--accent);font-weight:700}
+.bar{height:6px;background:rgba(255,255,255,.12);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,var(--g1),var(--g2));box-shadow:0 0 12px rgba(236,72,153,.5);transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+
+/* ===== PENGALAMAN (timeline) ===== */
+.xt{position:relative;max-width:820px;margin:0 auto;padding-left:38px}
+.xt::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--g1),var(--g2),transparent)}
+.xi{position:relative;padding-bottom:56px}
+.xi:last-child{padding-bottom:0}
+.xi::before{content:"";position:absolute;left:-38px;top:8px;width:16px;height:16px;border-radius:50%;background:linear-gradient(135deg,var(--g1),var(--g2));box-shadow:0 0 0 6px rgba(139,92,246,.22),0 0 18px rgba(236,72,153,.6)}
+.xi .tag{display:inline-block;font-size:.76rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent2);margin-bottom:2px}
+.xi h3{margin:0;font-size:1.4rem;line-height:1.35}
+.xi .org{color:var(--accent);font-weight:600;font-size:.95rem;margin:2px 0 12px}
+.xi ul{margin:0;padding-left:20px;color:var(--muted);font-size:.97rem}
+.xi li{margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chips span{background:rgba(255,255,255,.08);border:1px solid var(--line);border-radius:99px;padding:2px 14px;font-size:.78rem;font-weight:500;color:#e9d5ff}
+
+/* ===== PROYEK (daftar bernomor) ===== */
+.plist{border-top:1px solid var(--line)}
+.prow{position:relative;display:grid;grid-template-columns:96px 1fr auto;gap:28px;align-items:center;padding:36px 14px;border-bottom:1px solid var(--line)}
+.prow.reveal{transition:opacity .8s ease,transform .8s ease,background .3s,padding-left .3s}
+.prow::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--g1),var(--g2));transform:scaleY(0);transform-origin:top;transition:transform .3s}
+.prow:hover{background:linear-gradient(90deg,rgba(139,92,246,.16),transparent 75%);padding-left:30px}
+.prow:hover::before{transform:scaleY(1)}
+.pno{font-size:3rem;font-weight:800;line-height:1;color:transparent;-webkit-text-stroke:1.5px rgba(196,181,253,.5)}
+.prow:hover .pno{background:linear-gradient(135deg,#c4b5fd,#f9a8d4);-webkit-background-clip:text;background-clip:text;-webkit-text-stroke:0}
+.pinfo h3{margin:0 0 6px;font-size:1.3rem;line-height:1.35}
+.pinfo p{margin:0;color:var(--muted);font-size:.97rem;max-width:62ch}
+.pinfo .chips{margin-top:14px}
+.pact{display:flex;flex-direction:column;align-items:flex-end;gap:10px;min-width:150px}
+.pact a{display:inline-block;padding:9px 20px;border-radius:99px;background:linear-gradient(90deg,var(--g1),var(--g2));color:#fff;text-decoration:none;font-size:.85rem;font-weight:600;transition:transform .2s,box-shadow .2s}
+.pact a:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(236,72,153,.4)}
+.st{font-size:.85rem;color:var(--muted);white-space:nowrap}
+.st.priv::before{content:"🔒 "}
+.st.info::before{content:"ℹ️ "}
+.st.grp::before{content:"👥 "}
+@media(max-width:760px){
+  .prow{grid-template-columns:1fr;gap:12px;padding:30px 6px}
+  .prow:hover{padding-left:16px}
+  .pno{font-size:2.2rem}
+  .pact{flex-direction:row;flex-wrap:wrap;align-items:center;min-width:0}
+}
+
+/* ===== KONTAK (band gradien, tanpa kartu) ===== */
+.contact-band{position:relative;text-align:center;color:#fff;padding:120px 0 110px;
+  background:
+    radial-gradient(circle at 8% 12%,rgba(255,255,255,.16) 0 170px,transparent 171px),
+    radial-gradient(circle at 93% 92%,rgba(255,255,255,.13) 0 140px,transparent 141px),
+    linear-gradient(135deg,#7c3aed,#ec4899)}
+.contact-band::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,#8b5cf6 20%,#f9a8d4 50%,#8b5cf6 80%,transparent);
+  box-shadow:0 0 18px rgba(236,72,153,.65);z-index:3}
+.contact-band::after{content:"";position:absolute;top:-7px;left:50%;width:14px;height:14px;margin-left:-7px;
+  transform:rotate(45deg);border-radius:3px;background:linear-gradient(135deg,#a78bfa,#f472b6);
+  box-shadow:0 0 0 4px rgba(26,16,51,.9),0 0 22px rgba(236,72,153,.85);z-index:4}
+.contact-band .label{color:#fff}
+.contact-band .label::before{background:linear-gradient(90deg,transparent,#fff)}
+.contact-band .label::after{background:linear-gradient(90deg,transparent,#fff)}
+.contact-band h2{font-size:clamp(2rem,5.5vw,3.2rem)}
+.contact-band p{max-width:520px;margin:16px auto 36px;font-size:1.08rem;opacity:.95}
+.wa{display:inline-flex;align-items:center;gap:12px;background:#25d366;color:#fff;text-decoration:none;font-weight:700;font-size:1.15rem;padding:18px 40px;border-radius:99px;box-shadow:0 10px 26px rgba(0,0,0,.28);animation:pulse 2s infinite;transition:transform .2s}
+.wa:hover{transform:scale(1.05)}
+.wa svg,.wa-float svg{width:26px;height:26px;fill:#fff}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.7)}70%{box-shadow:0 0 0 22px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.soc-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.soc-btns a{display:inline-flex;align-items:center;gap:8px;padding:12px 26px;border-radius:99px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.5);color:#fff;text-decoration:none;font-weight:600;font-size:.95rem;transition:transform .2s,background .2s}
+.soc-btns a:hover{transform:translateY(-3px);background:rgba(255,255,255,.32)}
+.soc-btns svg{width:20px;height:20px;fill:#fff}
+.wa-float{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:58px;height:58px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.3);z-index:25;animation:pulse 2s infinite;transition:opacity .3s}
+.wa-float.hide{opacity:0;pointer-events:none}
+footer{text-align:center;padding:30px 20px;color:var(--muted);font-size:.88rem;background:rgba(8,4,20,.85);border-top:1px solid var(--line)}
+footer a{color:var(--accent);text-decoration:none;margin:0 8px;font-weight:600}
+footer a:hover{text-decoration:underline}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(36px);transition:opacity .8s ease,transform .8s ease}
+.reveal.left{transform:translateX(-44px)}
+.reveal.right{transform:translateX(44px)}
+.reveal.show{opacity:1;transform:none}
+.d1{transition-delay:.12s}.d2{transition-delay:.24s}.d3{transition-delay:.36s}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div id="progress"></div>
+
+<nav><div class="wrap">
+  <b class="grad">Midiana.</b>
+  <div class="menu"><a href="#beranda">Beranda</a><a href="#tentang">Tentang</a><a href="#keahlian">Keahlian</a><a href="#pengalaman">Pengalaman</a><a href="#proyek">Proyek</a><a href="#kontak">Kontak</a></div>
+</div></nav>
+
+<!-- HERO -->
+<header class="hero" id="beranda">
+  <span class="fl" style="top:12%;left:6%;font-size:2.2rem">&lt;/&gt;</span>
+  <span class="fl" style="top:62%;left:8%;font-size:1.8rem;animation-delay:-3s">{ }</span>
+  <span class="fl" style="top:16%;right:7%;font-size:1.6rem;animation-delay:-5s">01</span>
+  <span class="fl" style="top:56%;right:7%;font-size:2rem;animation-delay:-2s">$_</span>
+  <span class="fl" style="top:70%;left:26%;font-size:1.6rem;animation-delay:-6s">🔒</span>
+  <span class="fl" style="top:8%;left:40%;font-size:1.6rem;animation-delay:-4s">🛡️</span>
+  <span class="fl" style="top:68%;right:26%;font-size:1.6rem;animation-delay:-7s">#!</span>
+
+  <div class="wrap">
+    <div class="photo-box reveal"><div class="photo"><img src="fotosaya.jpeg" alt="Foto Midiana Nurussahar"></div></div>
+    <div class="hero-text reveal d1">
+      <span class="hi">👋 Halo, saya</span>
+      <h1>Midiana Nurussahar</h1>
+      <div class="typed"><span id="typed"></span><span class="cursor"></span></div>
+      <p>Mahasiswa D3 Teknologi Informasi yang suka membangun aplikasi web dan mobile, serta tertarik pada keamanan siber. Siap berkolaborasi mewujudkan ide digital menjadi solusi nyata.</p>
+      <div class="btns"><a class="btn primary" href="#proyek">Lihat Proyek</a><a class="btn ghost" href="#kontak">Hubungi Saya</a></div>
+      <div class="socials">
+        <a href="https://github.com/Dinjawa" target="_blank" rel="noopener" aria-label="GitHub Dinjawa">
+          <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.24 2.75.12 3.04.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/midiana-nurussahar-870799322" target="_blank" rel="noopener" aria-label="LinkedIn Midiana Nurussahar">
+          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">scroll ke bawah ↓</div>
+  <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,50 C360,95 1080,5 1440,50 L1440,80 L0,80 Z"/></svg>
+</header>
+
+<!-- BAGIAN TENGAH -->
+<main class="middle">
+  <div class="wrap">
+
+    <div class="stats">
+      <div class="stat reveal"><b class="grad" data-count="6">0</b><span>Proyek</span></div>
+      <div class="stat reveal d1"><b class="grad" data-count="5">0</b><span>Semester</span></div>
+      <div class="stat reveal d2"><b class="grad" data-count="11">0</b><span>Keahlian</span></div>
+    </div>
+
+    <!-- TENTANG -->
+    <section id="tentang">
+      <div class="head reveal"><span class="label">Tentang Saya</span><h2>Mengenal lebih dekat</h2></div>
+      <div class="two">
+        <div class="about reveal left">
+          <p>Saya mahasiswa semester 5 program studi D3 Teknologi Informasi di Politeknik Negeri Madiun. Selama perkuliahan saya mempelajari pemrograman web, pengembangan aplikasi mobile, cloud computing, dan keamanan siber.</p>
+          <p>Saya senang belajar hal baru, mengerjakan proyek nyata, dan mengubah masalah sehari-hari menjadi aplikasi yang berguna. Minat saya saat ini ada pada pengembangan aplikasi dan keamanan aplikasi web.</p>
+        </div>
+        <div class="timeline reveal right">
+          <div class="tl"><small>Sekarang</small><h4>D3 Teknologi Informasi</h4><p>Politeknik Negeri Madiun, semester 5</p></div>
+          <div class="tl"><small>Minat</small><h4>Web, Mobile &amp; Cyber Security</h4><p>Fokus belajar keamanan aplikasi web</p></div>
+          <div class="tl"><small>Target</small><h4>Developer profesional</h4><p>Membangun solusi digital yang bermanfaat</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEAHLIAN -->
+    <section id="keahlian">
+      <div class="head reveal"><span class="label">Keahlian</span><h2>Yang saya kuasai</h2></div>
+      <div class="skills">
+        <div class="scol reveal">
+          <h3><span>🌐</span>Web Development</h3>
+          <div class="skill"><div class="row"><span>HTML &amp; CSS</span><em>85%</em></div><div class="bar"><i data-w="85"></i></div></div>
+          <div class="skill"><div class="row"><span>JavaScript</span><em>70%</em></div><div class="bar"><i data-w="70"></i></div></div>
+          <div class="skill"><div class="row"><span>PHP &amp; MySQL</span><em>80%</em></div><div class="bar"><i data-w="80"></i></div></div>
+          <div class="skill"><div class="row"><span>Laravel (Blade)</span><em>65%</em></div><div class="bar"><i data-w="65"></i></div></div>
+        </div>
+        <div class="scol reveal d1">
+          <h3><span>📱</span>Mobile &amp; API</h3>
+          <div class="skill"><div class="row"><span>Flutter (Dart)</span><em>75%</em></div><div class="bar"><i data-w="75"></i></div></div>
+          <div class="skill"><div class="row"><span>Kotlin (Android)</span><em>60%</em></div><div class="bar"><i data-w="60"></i></div></div>
+          <div class="skill"><div class="row"><span>REST API</span><em>75%</em></div><div class="bar"><i data-w="75"></i></div></div>
+          <div class="skill"><div class="row"><span>Git &amp; GitHub</span><em>70%</em></div><div class="bar"><i data-w="70"></i></div></div>
+        </div>
+        <div class="scol reveal d2">
+          <h3><span>🛡️</span>Security &amp; Cloud</h3>
+          <div class="skill"><div class="row"><span>Penetration Testing &amp; OWASP</span><em>65%</em></div><div class="bar"><i data-w="65"></i></div></div>
+          <div class="skill"><div class="row"><span>SIEM (Wazuh) &amp; WAF</span><em>60%</em></div><div class="bar"><i data-w="60"></i></div></div>
+          <div class="skill"><div class="row"><span>Cloud Computing (Proxmox)</span><em>65%</em></div><div class="bar"><i data-w="65"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PENGALAMAN -->
+    <section id="pengalaman">
+      <div class="head reveal"><span class="label">Pengalaman</span><h2>Perjalanan belajar saya</h2></div>
+      <div class="xt">
+
+        <div class="xi reveal">
+          <span class="tag">Magang</span>
+          <h3>Magang Keamanan Siber</h3>
+          <p class="org">PT Teknologi Server Indonesia (XCode)</p>
+          <ul>
+            <li>Mengimplementasikan SIEM menggunakan Wazuh serta WAF untuk memantau dan melindungi server.</li>
+            <li>Mempelajari dan menguji kerentanan aplikasi web berdasarkan OWASP.</li>
+            <li>Melakukan penetration testing dan menyusun laporan evaluasi kinerja serta aktivitas magang.</li>
+          </ul>
+          <div class="chips"><span>Wazuh</span><span>SIEM</span><span>WAF</span><span>OWASP</span><span>Pentest</span></div>
+        </div>
+
+        <div class="xi reveal">
+          <span class="tag">Pelatihan</span>
+          <h3>Pelatihan Capture The Flag (CTF)</h3>
+          <p class="org">PT Teknologi Server Indonesia (XCode)</p>
+          <ul>
+            <li>Mengikuti pelatihan CTF untuk melatih kemampuan mencari dan mengeksploitasi celah keamanan secara etis.</li>
+          </ul>
+          <div class="chips"><span>CTF</span><span>Cyber Security</span></div>
+        </div>
+
+        <div class="xi reveal">
+          <span class="tag">Pelatihan</span>
+          <h3>Pelatihan Junior Development</h3>
+          <p class="org">Digital Talent Scholarship (Digitalent) Kominfo</p>
+          <ul>
+            <li>Mengikuti pelatihan pengembangan perangkat lunak tingkat junior melalui program Digitalent dari Kominfo.</li>
+          </ul>
+          <div class="chips"><span>Digitalent</span><span>Kominfo</span><span>Development</span></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROYEK -->
+    <section id="proyek">
+      <div class="head reveal"><span class="label">Portofolio</span><h2>Proyek yang pernah saya buat</h2></div>
+      <div class="plist">
+
+        <article class="prow reveal">
+          <span class="pno">01</span>
+          <div class="pinfo">
+            <h3>🛡️ Proyek Magang Keamanan Siber</h3>
+            <p>Rangkaian tugas magang: implementasi SIEM Wazuh dan WAF, pengujian kerentanan OWASP, serta penetration testing beserta laporannya.</p>
+            <div class="chips"><span>Wazuh</span><span>WAF</span><span>OWASP</span><span>Pentest</span></div>
+          </div>
+          <div class="pact"><span class="st info">Dokumen internal magang</span></div>
+        </article>
+
+        <article class="prow reveal">
+          <span class="pno">02</span>
+          <div class="pinfo">
+            <h3>📱 Aplikasi Absensi Karyawan QR Code</h3>
+            <p>Aplikasi mobile untuk absensi harian dengan QR Code dan perhitungan gaji, lengkap dengan sisi HRD/admin.</p>
+            <div class="chips"><span>Flutter</span><span>Dart</span><span>Firebase</span></div>
+          </div>
+          <div class="pact"><span class="st priv">Repositori privat</span></div>
+        </article>
+
+        <article class="prow reveal">
+          <span class="pno">03</span>
+          <div class="pinfo">
+            <h3>🔌 REST API Data Karyawan</h3>
+            <p>Web service untuk mengelola data karyawan (tambah, lihat, ubah, hapus), dikerjakan secara berkelompok pada praktikum DevOps &amp; Web Services.</p>
+            <div class="chips"><span>PHP</span><span>MySQL</span><span>REST API</span></div>
+          </div>
+          <div class="pact"><span class="st grp">Proyek kelompok</span></div>
+        </article>
+
+        <article class="prow reveal">
+          <span class="pno">04</span>
+          <div class="pinfo">
+            <h3>🧩 Aplikasi CRM</h3>
+            <p>Aplikasi web CRM (Customer Relationship Management) untuk mengelola data pelanggan dan aktivitas bisnis, dikerjakan secara berkelompok.</p>
+            <div class="chips"><span>Laravel</span><span>Blade</span><span>MySQL</span></div>
+          </div>
+          <div class="pact"><span class="st grp">Proyek kelompok</span></div>
+        </article>
+
+        <article class="prow reveal">
+          <span class="pno">05</span>
+          <div class="pinfo">
+            <h3>✅ Aplikasi To-Do List Android</h3>
+            <p>Aplikasi Android untuk mencatat dan mengelola daftar tugas harian, dibuat dengan Kotlin.</p>
+            <div class="chips"><span>Kotlin</span><span>Android</span></div>
+          </div>
+          <div class="pact">
+            <a href="https://github.com/Rini2815/MyAppToDoList" target="_blank" rel="noopener">MyAppToDoList</a>
+            <a href="https://github.com/Rini2815/todolist" target="_blank" rel="noopener">todolist</a>
+          </div>
+        </article>
+
+        <article class="prow reveal">
+          <span class="pno">06</span>
+          <div class="pinfo">
+            <h3>☁️ Simulasi Data Center Proxmox</h3>
+            <p>Simulasi infrastruktur cloud menggunakan Proxmox di VirtualBox untuk praktikum Cloud Computing.</p>
+            <div class="chips"><span>Proxmox</span><span>VirtualBox</span><span>Cloud</span></div>
+          </div>
+          <div class="pact"><span class="st info">Praktikum Cloud Computing</span></div>
+        </article>
+
+      </div>
+    </section>
+  </div>
+</main>
+
+<!-- KONTAK -->
+<div class="contact-band" id="kontak">
+  <div class="wrap reveal">
+    <span class="label">Kontak</span>
+    <h2>Yuk, ngobrol dan berkolaborasi!</h2>
+    <p>Punya proyek, pertanyaan, atau ingin berkolaborasi? Kirim pesan langsung lewat WhatsApp.</p>
+    <a class="wa" href="https://wa.me/6285727628569?text=Halo%20Midiana%2C%20saya%20melihat%20landing%20page%20kamu.%20Boleh%20kita%20ngobrol%3F" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.12c-.25.69-1.43 1.32-1.97 1.37-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.6-2.9-1.25-4.8-4.17-4.95-4.37-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.25.58.83 2.01.9 2.16.07.14.12.31.02.5-.1.2-.14.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.3-.12.58.17.29.74 1.22 1.59 1.97 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.91-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.22.55.34.07.12.07.7-.18 1.39z"/></svg>
+      Hubungi Saya via WhatsApp
+    </a>
+    <div class="soc-btns">
+      <a href="https://github.com/Dinjawa" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.24 2.75.12 3.04.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/midiana-nurussahar-870799322" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- tombol WA melayang -->
+<a class="wa-float" id="waFloat" href="https://wa.me/6285727628569?text=Halo%20Midiana%2C%20saya%20melihat%20landing%20page%20kamu." target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.12c-.25.69-1.43 1.32-1.97 1.37-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.6-2.9-1.25-4.8-4.17-4.95-4.37-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.25.58.83 2.01.9 2.16.07.14.12.31.02.5-.1.2-.14.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.3-.12.58.17.29.74 1.22 1.59 1.97 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.91-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.22.55.34.07.12.07.7-.18 1.39z"/></svg>
+</a>
+
+<footer>
+  © 2026 Midiana Nurussahar · Politeknik Negeri Madiun<br>
+  <a href="https://github.com/Dinjawa" target="_blank" rel="noopener">GitHub</a>·<a href="https://www.linkedin.com/in/midiana-nurussahar-870799322" target="_blank" rel="noopener">LinkedIn</a>
+</footer>
+
+<script>
+// progress bar + sembunyikan tombol WA melayang di area kontak
+const bar = document.getElementById('progress');
+const waFloat = document.getElementById('waFloat');
+const contact = document.getElementById('kontak');
+addEventListener('scroll', () => {
+  const h = document.documentElement;
+  bar.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+  waFloat.classList.toggle('hide', contact.getBoundingClientRect().top < innerHeight - 120);
+}, { passive: true });
+
+// efek mengetik
+const roles = ['Web Developer Enthusiast', 'Mobile App Developer', 'Cyber Security Learner'];
+const el = document.getElementById('typed');
+let r = 0, c = 0, del = false;
+(function type() {
+  const word = roles[r];
+  el.textContent = word.slice(0, c);
+  if (!del && c < word.length) { c++; setTimeout(type, 80); }
+  else if (!del) { del = true; setTimeout(type, 1500); }
+  else if (c > 0) { c--; setTimeout(type, 40); }
+  else { del = false; r = (r + 1) % roles.length; setTimeout(type, 300); }
+})();
+
+// animasi muncul saat scroll + skill bar + counter
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    e.target.classList.add('show');
+    e.target.querySelectorAll('.bar i').forEach(b => b.style.width = b.dataset.w + '%');
+    const n = e.target.querySelector('[data-count]');
+    if (n && !n.done) {
+      n.done = true;
+      const to = +n.dataset.count; let v = 0;
+      const t = setInterval(() => { v++; n.textContent = v; if (v >= to) clearInterval(t); }, 150);
+    }
+    io.unobserve(e.target);
+  });
+}, { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(x => io.observe(x));
+
+// menu aktif sesuai posisi scroll
+const links = document.querySelectorAll('.menu a');
+const spy = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+  });
+}, { rootMargin: '-45% 0px -50% 0px' });
+document.querySelectorAll('header[id], section[id], .contact-band[id]').forEach(s => spy.observe(s));
+
+// background jaringan partikel
+(function () {
+  const cv = document.getElementById('bg'), ctx = cv.getContext('2d');
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let w, h, pts = [];
+  const col = () => getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#c4b5fd';
+  function init() {
+    w = cv.width = innerWidth; h = cv.height = innerHeight;
+    const n = Math.min(90, Math.floor(w * h / 16000));
+    pts = Array.from({ length: n }, () => ({ x: Math.random() * w, y: Math.random() * h, vx: (Math.random() - .5) * .5, vy: (Math.random() - .5) * .5 }));
+  }
+  function draw() {
+    ctx.clearRect(0, 0, w, h); const c = col();
+    for (const p of pts) {
+      if (!still) { p.x += p.vx; p.y += p.vy; }
+      if (p.x < 0 || p.x > w) p.vx *= -1;
+      if (p.y < 0 || p.y > h) p.vy *= -1;
+      ctx.globalAlpha = .8; ctx.fillStyle = c;
+      ctx.beginPath(); ctx.arc(p.x, p.y, 2, 0, 6.283); ctx.fill();
+    }
+    for (let i = 0; i < pts.length; i++) for (let j = i + 1; j < pts.length; j++) {
+      const d = Math.hypot(pts[i].x - pts[j].x, pts[i].y - pts[j].y);
+      if (d < 130) {
+        ctx.globalAlpha = (1 - d / 130) * .35; ctx.strokeStyle = c; ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y); ctx.stroke();
+      }
+    }
+    if (!still) requestAnimationFrame(draw);
+  }
+  addEventListener('resize', () => { init(); if (still) draw(); });
+  init(); draw();
+})();
+</script>
+</body>
+</html>
