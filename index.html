@@ -3,66 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Portofolio | Midiana Nurussahar</title>
-<meta name="description" content="Portofolio Midiana Nurussahar, mahasiswa D3 Teknologi Informasi Politeknik Negeri Madiun: web, mobile, dan keamanan siber.">
+<title>Portofolio & E-Katalog Jasa | Midiana Nurussahar</title>
+<meta name="description" content="Portofolio Midiana Nurussahar dan e-katalog jasa: pembuatan website, aplikasi mobile, CV, dan portofolio.">
 <meta name="theme-color" content="#1a1033">
-
-<!-- Favicon (ikon di tab browser). ?v=2 supaya browser memuat logo terbaru -->
 <link rel="icon" type="image/png" sizes="512x512" href="LogoSaya.png?v=2">
 <link rel="apple-touch-icon" href="LogoSaya.png?v=2">
-
-<!-- Tampilan saat link dibagikan (WhatsApp, LinkedIn, dll) -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Portofolio | Midiana Nurussahar">
-<meta property="og:description" content="Portofolio Midiana Nurussahar: web, mobile, dan keamanan siber.">
+<meta property="og:title" content="Portofolio & E-Katalog Jasa | Midiana Nurussahar">
+<meta property="og:description" content="Jasa pembuatan website, aplikasi mobile, CV, dan portofolio.">
 <meta property="og:url" content="https://dinjawa.github.io/landing-page/">
 <meta property="og:image" content="https://dinjawa.github.io/landing-page/LogoSaya.png">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{
-  color-scheme:dark;
-  --bg:#1a1033;
-  --surface2:rgba(255,255,255,.11);
-  --text:#f6f1fb;
-  --muted:rgba(246,241,251,.74);
-  --accent:#c4b5fd;
-  --accent2:#f9a8d4;
-  --g1:#8b5cf6;
-  --g2:#ec4899;
-  --line:rgba(255,255,255,.16);
-  --dark:rgba(12,6,28,.62);
-  --ig:linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-  --li:linear-gradient(135deg,#0a66c2 0%,#3b9bf0 100%);
-  --gh:linear-gradient(135deg,#161b22 0%,#484f58 100%)
-}
+:root{color-scheme:dark;--bg:#1a1033;--surface2:rgba(255,255,255,.11);--text:#f6f1fb;--muted:rgba(246,241,251,.74);--accent:#c4b5fd;--accent2:#f9a8d4;--g1:#8b5cf6;--g2:#ec4899;--line:rgba(255,255,255,.16);--dark:rgba(12,6,28,.62);
+--ig:linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);--li:linear-gradient(135deg,#0a66c2 0%,#3b9bf0 100%);--gh:linear-gradient(135deg,#161b22 0%,#484f58 100%)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:70px}
 body{margin:0;background:var(--bg);color:var(--text);font-family:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
 a{outline-offset:3px}
-a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent2)}
+a:focus-visible,.btn:focus-visible,.fbtn:focus-visible{outline:3px solid var(--accent2)}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
 .grad{background:linear-gradient(90deg,#c4b5fd,#f9a8d4);-webkit-background-clip:text;background-clip:text;color:transparent}
-
-/* ===== LATAR GLOBAL ===== */
-body::before{content:"";position:fixed;inset:0;z-index:-3;
-  background:
-    radial-gradient(55% 70% at 15% 25%,#7c3aed 0%,transparent 62%),
-    radial-gradient(50% 65% at 88% 30%,#ec4899 0%,transparent 62%),
-    radial-gradient(60% 70% at 50% 110%,#2563eb 0%,transparent 66%),#1a1033;
-  background-size:160% 160%;animation:mesh 16s ease-in-out infinite alternate}
+body::before{content:"";position:fixed;inset:0;z-index:-3;background:radial-gradient(55% 70% at 15% 25%,#7c3aed 0%,transparent 62%),radial-gradient(50% 65% at 88% 30%,#ec4899 0%,transparent 62%),radial-gradient(60% 70% at 50% 110%,#2563eb 0%,transparent 66%),#1a1033;background-size:160% 160%;animation:mesh 16s ease-in-out infinite alternate}
 @keyframes mesh{0%{background-position:0% 0%}100%{background-position:100% 100%}}
-body::after{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
-  background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);
-  background-size:48px 48px;
-  -webkit-mask-image:radial-gradient(ellipse at 50% 40%,#000 20%,transparent 85%);
-  mask-image:radial-gradient(ellipse at 50% 40%,#000 20%,transparent 85%)}
+body::after{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);background-size:48px 48px;-webkit-mask-image:radial-gradient(ellipse at 50% 40%,#000 20%,transparent 85%);mask-image:radial-gradient(ellipse at 50% 40%,#000 20%,transparent 85%)}
 #bg{position:fixed;inset:0;width:100%;height:100%;z-index:-1;opacity:.8;pointer-events:none}
 #progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--g1),var(--g2));z-index:30}
 
-/* ===== NAV ===== */
+/* NAV */
 nav{position:sticky;top:0;z-index:20;background:rgba(20,10,40,.6);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px;gap:16px}
 nav b{font-size:1.25rem;font-weight:800;letter-spacing:-.01em}
@@ -71,15 +41,14 @@ nav b{font-size:1.25rem;font-weight:800;letter-spacing:-.01em}
 .menu a{color:var(--muted);text-decoration:none;font-size:.92rem;font-weight:500;padding:8px 14px;border-radius:99px;white-space:nowrap;transition:background .2s,color .2s}
 .menu a:hover{color:#fff;background:var(--surface2)}
 .menu a.active{color:#fff;background:linear-gradient(90deg,var(--g1),var(--g2));font-weight:600}
-@media(max-width:560px){nav b{display:none}.menu{width:100%;justify-content:space-between}.menu a{padding:8px 10px;font-size:.82rem}}
+@media(max-width:700px){nav b{display:none}.menu{width:100%;justify-content:flex-start}.menu a{padding:8px 11px;font-size:.82rem}}
 
-/* ===== HERO ===== */
+/* HERO */
 .hero{position:relative;display:flex;align-items:center;min-height:calc(100vh - 64px);min-height:calc(100svh - 64px);overflow:hidden;color:#fff}
 .fl{position:absolute;z-index:1;font-family:ui-monospace,Consolas,monospace;font-weight:700;color:rgba(255,255,255,.45);text-shadow:0 0 14px rgba(244,114,182,.7);user-select:none;pointer-events:none;animation:fl 9s ease-in-out infinite}
 @keyframes fl{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-18px) rotate(5deg)}}
 @media(max-width:720px){.fl{display:none}}
 .wave{position:absolute;left:0;bottom:-1px;width:100%;height:80px;fill:var(--dark);z-index:2;display:block}
-
 .hero .wrap{position:relative;z-index:2;display:flex;gap:64px;align-items:center;justify-content:center;flex-wrap:wrap;padding-top:48px;padding-bottom:130px}
 .photo-box{position:relative;width:260px;height:260px;flex:none;filter:drop-shadow(0 0 40px rgba(236,72,153,.55))}
 .photo-box::before{content:"";position:absolute;inset:-10px;border-radius:50%;background:conic-gradient(#a78bfa,#f472b6,#38bdf8,#a78bfa);animation:spin 6s linear infinite}
@@ -103,45 +72,37 @@ nav b{font-size:1.25rem;font-weight:800;letter-spacing:-.01em}
 .scroll-hint{position:absolute;bottom:86px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.75);font-size:.8rem;animation:bounce 2s infinite;z-index:3;white-space:nowrap}
 @keyframes bounce{50%{transform:translate(-50%,8px)}}
 @media(max-width:720px){.hero .wrap{text-align:center;gap:32px}.hero p{margin-left:auto;margin-right:auto}.btns,.socials{justify-content:center}.scroll-hint{display:none}.photo-box{width:200px;height:200px}}
-
-/* ikon sosial di hero (berwarna sesuai merek) */
 .socials{display:flex;gap:14px;margin-top:24px}
 .socials a{width:48px;height:48px;border-radius:50%;border:1px solid transparent;display:flex;align-items:center;justify-content:center;transition:transform .25s,box-shadow .25s}
 .socials a:hover{transform:translateY(-5px) scale(1.1)}
 .socials svg{width:23px;height:23px;fill:#fff}
 .socials a.gh{background:var(--gh);border-color:rgba(255,255,255,.28);box-shadow:0 6px 18px rgba(0,0,0,.45)}
-.socials a.gh:hover{box-shadow:0 10px 26px rgba(255,255,255,.22)}
 .socials a.li{background:var(--li);box-shadow:0 6px 18px rgba(10,102,194,.55)}
-.socials a.li:hover{box-shadow:0 10px 26px rgba(59,155,240,.75)}
 .socials a.ig{background:var(--ig);box-shadow:0 6px 18px rgba(220,39,67,.5)}
-.socials a.ig:hover{box-shadow:0 10px 26px rgba(220,39,67,.75)}
 
-/* ===== BAGIAN TENGAH ===== */
+/* MIDDLE */
 .middle{position:relative;background:var(--dark);padding:70px 0 120px}
-
-/* ===== STATS (tanpa kotak) ===== */
 .stats{display:flex;max-width:860px;margin:0 auto;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .stat{flex:1;text-align:center;padding:30px 10px}
 .stat+.stat{border-left:1px solid var(--line)}
 .stat b{display:block;font-size:clamp(2.2rem,6vw,3.4rem);font-weight:800;line-height:1.15}
 .stat span{color:var(--muted);font-size:.9rem;letter-spacing:.08em;text-transform:uppercase}
-
-/* ===== JUDUL SECTION ===== */
 .middle section{padding:110px 0 0}
 .head{text-align:center;margin-bottom:56px}
 .label{display:inline-flex;align-items:center;gap:14px;color:var(--accent2);font-weight:600;font-size:.82rem;letter-spacing:.2em;text-transform:uppercase}
 .label::before,.label::after{content:"";width:32px;height:2px;border-radius:2px;background:linear-gradient(90deg,transparent,var(--accent2))}
 .label::after{transform:scaleX(-1)}
 h2{font-size:clamp(1.8rem,4.5vw,2.7rem);margin:14px 0 0;font-weight:800;letter-spacing:-.02em;line-height:1.2}
+.sub{max-width:560px;margin:14px auto 0;color:var(--muted);font-size:1rem}
 
-/* ===== TENTANG (terbuka) ===== */
+/* TENTANG */
 .two{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:start}
 @media(max-width:820px){.two{grid-template-columns:1fr;gap:44px}}
 .about p{margin:0 0 20px;color:var(--muted);font-size:1.05rem}
 .about p:first-child{color:var(--text);font-size:1.22rem;line-height:1.7}
 .about p:last-child{margin:0}
 .timeline{position:relative;padding-left:32px}
-.timeline::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--g1),var(--g2),transparent)}
+.timeline::before,.xt::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--g1),var(--g2),transparent)}
 .tl{position:relative;margin-bottom:34px}
 .tl:last-child{margin-bottom:0}
 .tl::before{content:"";position:absolute;left:-32px;top:6px;width:16px;height:16px;border-radius:50%;background:linear-gradient(135deg,var(--g1),var(--g2));box-shadow:0 0 0 5px rgba(139,92,246,.22),0 0 16px rgba(236,72,153,.55)}
@@ -149,7 +110,7 @@ h2{font-size:clamp(1.8rem,4.5vw,2.7rem);margin:14px 0 0;font-weight:800;letter-s
 .tl h4{margin:2px 0;font-size:1.1rem}
 .tl p{margin:0;color:var(--muted);font-size:.93rem}
 
-/* ===== KEAHLIAN (kolom terbuka) ===== */
+/* KEAHLIAN */
 .skills{display:grid;grid-template-columns:repeat(3,1fr)}
 .scol{padding:6px 36px}
 .scol:first-child{padding-left:0}
@@ -165,9 +126,8 @@ h2{font-size:clamp(1.8rem,4.5vw,2.7rem);margin:14px 0 0;font-weight:800;letter-s
 .bar{height:6px;background:rgba(255,255,255,.12);border-radius:99px;overflow:hidden}
 .bar i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,var(--g1),var(--g2));box-shadow:0 0 12px rgba(236,72,153,.5);transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
 
-/* ===== PENGALAMAN (timeline) ===== */
+/* PENGALAMAN */
 .xt{position:relative;max-width:820px;margin:0 auto;padding-left:38px}
-.xt::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--g1),var(--g2),transparent)}
 .xi{position:relative;padding-bottom:56px}
 .xi:last-child{padding-bottom:0}
 .xi::before{content:"";position:absolute;left:-38px;top:8px;width:16px;height:16px;border-radius:50%;background:linear-gradient(135deg,var(--g1),var(--g2));box-shadow:0 0 0 6px rgba(139,92,246,.22),0 0 18px rgba(236,72,153,.6)}
@@ -179,7 +139,7 @@ h2{font-size:clamp(1.8rem,4.5vw,2.7rem);margin:14px 0 0;font-weight:800;letter-s
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
 .chips span{background:rgba(255,255,255,.08);border:1px solid var(--line);border-radius:99px;padding:2px 14px;font-size:.78rem;font-weight:500;color:#e9d5ff}
 
-/* ===== PROYEK (daftar bernomor) ===== */
+/* PROYEK */
 .plist{border-top:1px solid var(--line)}
 .prow{position:relative;display:grid;grid-template-columns:96px 1fr auto;gap:28px;align-items:center;padding:36px 14px;border-bottom:1px solid var(--line)}
 .prow.reveal{transition:opacity .8s ease,transform .8s ease,background .3s,padding-left .3s}
@@ -198,25 +158,56 @@ h2{font-size:clamp(1.8rem,4.5vw,2.7rem);margin:14px 0 0;font-weight:800;letter-s
 .st.priv::before{content:"🔒 "}
 .st.info::before{content:"ℹ️ "}
 .st.grp::before{content:"👥 "}
-@media(max-width:760px){
-  .prow{grid-template-columns:1fr;gap:12px;padding:30px 6px}
-  .prow:hover{padding-left:16px}
-  .pno{font-size:2.2rem}
-  .pact{flex-direction:row;flex-wrap:wrap;align-items:center;min-width:0}
-}
+@media(max-width:760px){.prow{grid-template-columns:1fr;gap:12px;padding:30px 6px}.prow:hover{padding-left:16px}.pno{font-size:2.2rem}.pact{flex-direction:row;flex-wrap:wrap;align-items:center;min-width:0}}
 
-/* ===== KONTAK & SOSIAL (satu bagian, latar gradasi berwarna) ===== */
-.contact{position:relative;text-align:center;color:#fff;padding:120px 0 110px;
-  background:
-    radial-gradient(circle at 8% 14%,rgba(255,255,255,.13) 0 170px,transparent 171px),
-    radial-gradient(circle at 94% 90%,rgba(255,255,255,.10) 0 140px,transparent 141px),
-    linear-gradient(135deg,#6d28d9 0%,#a21caf 52%,#db2777 100%)}
-.contact::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;
-  background:linear-gradient(90deg,transparent,#c4b5fd 20%,#fbcfe8 50%,#c4b5fd 80%,transparent);
-  box-shadow:0 0 18px rgba(249,168,212,.7);z-index:3}
-.contact::after{content:"";position:absolute;top:-7px;left:50%;width:14px;height:14px;margin-left:-7px;
-  transform:rotate(45deg);border-radius:3px;background:linear-gradient(135deg,#a78bfa,#f472b6);
-  box-shadow:0 0 0 4px rgba(26,16,51,.9),0 0 22px rgba(236,72,153,.85);z-index:4}
+/* ===== E-KATALOG ===== */
+.filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:44px}
+.fbtn{font:inherit;font-size:.88rem;font-weight:600;color:var(--muted);background:var(--surface2);border:1px solid var(--line);border-radius:99px;padding:8px 22px;cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.fbtn:hover{color:#fff;transform:translateY(-2px)}
+.fbtn.on{color:#fff;border-color:transparent;background:linear-gradient(90deg,var(--g1),var(--g2))}
+.kgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px 44px}
+@media(max-width:940px){.kgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.kgrid{grid-template-columns:1fr;gap:40px}}
+.kitem{position:relative;display:flex;flex-direction:column;padding-top:28px}
+.kitem[hidden]{display:none}
+.kitem::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--line)}
+.kitem.hot::before{height:3px;background:linear-gradient(90deg,var(--g1),var(--g2));box-shadow:0 0 16px rgba(236,72,153,.6)}
+.ic{font-size:2.1rem;line-height:1;margin-bottom:14px}
+.kcat{color:var(--accent2);font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.kitem h3{margin:2px 0 8px;font-size:1.3rem;line-height:1.35}
+.kitem>p{margin:0 0 14px;color:var(--muted);font-size:.95rem}
+.kitem ul{margin:0 0 22px;padding:0;list-style:none;color:var(--muted);font-size:.92rem}
+.kitem li{position:relative;padding-left:24px;margin-bottom:6px}
+.kitem li::before{content:"✓";position:absolute;left:0;color:var(--accent2);font-weight:800}
+.price{margin-top:auto;font-size:1.9rem;font-weight:800;line-height:1.2}
+.price.ask{font-size:1.2rem}
+.price small{display:block;font-size:.8rem;font-weight:500;color:var(--muted);-webkit-text-fill-color:var(--muted)}
+.price .old{display:block;font-size:1rem;font-weight:600;line-height:1.3;color:var(--muted);-webkit-text-fill-color:var(--muted);text-decoration:line-through;text-decoration-color:#f472b6;text-decoration-thickness:2px}
+.price .now{display:block}
+.price small.save{display:inline-block;margin-top:6px;padding:2px 12px;border-radius:99px;background:rgba(249,168,212,.16);border:1px solid rgba(249,168,212,.4);color:var(--accent2);-webkit-text-fill-color:var(--accent2);font-weight:700;font-size:.74rem}
+.kcta{max-width:860px;margin:64px auto 0;text-align:center;border:1px dashed rgba(255,255,255,.3);border-radius:28px;padding:34px 24px}
+.kcta h3{margin:0 0 6px;font-size:1.3rem}
+.kcta p{margin:0 auto 4px;max-width:520px;color:var(--muted);font-size:.95rem}
+.kcta .kact{justify-content:center}
+.kact{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.kact a{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:99px;text-decoration:none;font-size:.85rem;font-weight:600;color:#fff;transition:transform .2s,box-shadow .2s}
+.kact a:hover{transform:translateY(-2px)}
+.kact svg{width:17px;height:17px;fill:#fff}
+.k-wa{background:#25d366;box-shadow:0 6px 16px rgba(37,211,102,.3)}
+.k-ig{background:var(--ig);box-shadow:0 6px 16px rgba(220,39,67,.3)}
+.badge{position:absolute;top:28px;right:0;padding:3px 14px;border-radius:99px;background:linear-gradient(90deg,var(--g1),var(--g2));font-size:.72rem;font-weight:700;color:#fff}
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:0;max-width:860px;margin:64px auto 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.how div{padding:26px 22px;text-align:center}
+.how div+div{border-left:1px solid var(--line)}
+.how b{display:block;font-size:1rem}
+.how span{color:var(--muted);font-size:.88rem}
+@media(max-width:700px){.how{grid-template-columns:1fr}.how div+div{border-left:0;border-top:1px solid var(--line)}}
+.knote{max-width:620px;margin:28px auto 0;text-align:center;color:var(--muted);font-size:.93rem}
+
+/* KONTAK */
+.contact{position:relative;text-align:center;color:#fff;padding:120px 0 110px;background:radial-gradient(circle at 8% 14%,rgba(255,255,255,.13) 0 170px,transparent 171px),radial-gradient(circle at 94% 90%,rgba(255,255,255,.10) 0 140px,transparent 141px),linear-gradient(135deg,#6d28d9 0%,#a21caf 52%,#db2777 100%)}
+.contact::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#c4b5fd 20%,#fbcfe8 50%,#c4b5fd 80%,transparent);box-shadow:0 0 18px rgba(249,168,212,.7);z-index:3}
+.contact::after{content:"";position:absolute;top:-7px;left:50%;width:14px;height:14px;margin-left:-7px;transform:rotate(45deg);border-radius:3px;background:linear-gradient(135deg,#a78bfa,#f472b6);box-shadow:0 0 0 4px rgba(26,16,51,.9),0 0 22px rgba(236,72,153,.85);z-index:4}
 .contact .label{color:#fff}
 .contact .label::before,.contact .label::after{background:linear-gradient(90deg,transparent,#fff)}
 .contact h2{font-size:clamp(2rem,5.5vw,3.2rem);text-shadow:0 2px 18px rgba(40,5,70,.35)}
@@ -225,12 +216,9 @@ h2{font-size:clamp(1.8rem,4.5vw,2.7rem);margin:14px 0 0;font-weight:800;letter-s
 .wa:hover{transform:scale(1.05)}
 .wa svg,.wa-float svg{width:26px;height:26px;fill:#fff}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.7)}70%{box-shadow:0 0 0 22px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
-
 .or{display:flex;align-items:center;gap:16px;max-width:560px;margin:52px auto 28px;color:rgba(255,255,255,.88);font-size:.85rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
 .or::before,.or::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55))}
 .or::after{transform:scaleX(-1)}
-
-/* tiga kartu putih: ikon berwarna sesuai merek masing-masing */
 .soc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:960px;margin:0 auto;text-align:left}
 @media(max-width:860px){.soc-grid{grid-template-columns:1fr;max-width:440px}}
 .soc{position:relative;display:flex;align-items:center;gap:16px;padding:20px 22px;border-radius:24px;background:rgba(255,255,255,.96);border:1px solid rgba(255,255,255,.7);color:#1f1235;text-decoration:none;box-shadow:0 12px 30px rgba(30,5,60,.28);transition:transform .25s,box-shadow .25s}
@@ -243,19 +231,13 @@ h2{font-size:clamp(1.8rem,4.5vw,2.7rem);margin:14px 0 0;font-weight:800;letter-s
 .soc .go{margin-left:auto;flex:none;font-size:1.25rem;color:#6d28d9;opacity:.6;transition:transform .25s,opacity .25s}
 .soc:hover .go{transform:translateX(5px);opacity:1}
 .soc.gh .ico{background:var(--gh);box-shadow:0 8px 18px rgba(22,27,34,.4)}
-.soc.gh:hover{box-shadow:0 22px 44px rgba(22,27,34,.5)}
 .soc.li .ico{background:var(--li);box-shadow:0 8px 18px rgba(10,102,194,.45)}
-.soc.li:hover{box-shadow:0 22px 44px rgba(10,102,194,.5)}
 .soc.ig .ico{background:var(--ig);box-shadow:0 8px 18px rgba(220,39,67,.45)}
-.soc.ig:hover{box-shadow:0 22px 44px rgba(220,39,67,.5)}
-
 .wa-float{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:58px;height:58px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.3);z-index:25;animation:pulse 2s infinite;transition:opacity .3s}
 .wa-float.hide{opacity:0;pointer-events:none}
 footer{text-align:center;padding:30px 20px;color:var(--muted);font-size:.88rem;background:rgba(8,4,20,.85);border-top:1px solid var(--line)}
 footer a{color:var(--accent);text-decoration:none;margin:0 8px;font-weight:600}
 footer a:hover{text-decoration:underline}
-
-/* reveal */
 .reveal{opacity:0;transform:translateY(36px);transition:opacity .8s ease,transform .8s ease}
 .reveal.left{transform:translateX(-44px)}
 .reveal.right{transform:translateX(44px)}
@@ -266,11 +248,11 @@ footer a:hover{text-decoration:underline}
 </head>
 <body>
 
-<!-- Ikon sosial (dipakai berulang lewat <use>) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-ig" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></symbol>
   <symbol id="i-gh" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.24 2.75.12 3.04.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></symbol>
   <symbol id="i-li" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.12c-.25.69-1.43 1.32-1.97 1.37-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.6-2.9-1.25-4.8-4.17-4.95-4.37-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.25.58.83 2.01.9 2.16.07.14.12.31.02.5-.1.2-.14.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.3-.12.58.17.29.74 1.22 1.59 1.97 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.91-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.22.55.34.07.12.07.7-.18 1.39z"/></symbol>
 </svg>
 
 <canvas id="bg"></canvas>
@@ -278,10 +260,9 @@ footer a:hover{text-decoration:underline}
 
 <nav><div class="wrap">
   <b class="grad">Midiana.</b>
-  <div class="menu"><a href="#beranda">Beranda</a><a href="#tentang">Tentang</a><a href="#keahlian">Keahlian</a><a href="#pengalaman">Pengalaman</a><a href="#proyek">Proyek</a><a href="#kontak">Kontak</a></div>
+  <div class="menu"><a href="#beranda">Beranda</a><a href="#tentang">Tentang</a><a href="#keahlian">Keahlian</a><a href="#pengalaman">Pengalaman</a><a href="#proyek">Proyek</a><a href="#katalog">Katalog</a><a href="#kontak">Kontak</a></div>
 </div></nav>
 
-<!-- HERO -->
 <header class="hero" id="beranda">
   <span class="fl" style="top:12%;left:6%;font-size:2.2rem">&lt;/&gt;</span>
   <span class="fl" style="top:62%;left:8%;font-size:1.8rem;animation-delay:-3s">{ }</span>
@@ -290,25 +271,18 @@ footer a:hover{text-decoration:underline}
   <span class="fl" style="top:70%;left:26%;font-size:1.6rem;animation-delay:-6s">🔒</span>
   <span class="fl" style="top:8%;left:40%;font-size:1.6rem;animation-delay:-4s">🛡️</span>
   <span class="fl" style="top:68%;right:26%;font-size:1.6rem;animation-delay:-7s">#!</span>
-
   <div class="wrap">
     <div class="photo-box reveal"><div class="photo"><img src="fotosaya.jpeg" alt="Foto Midiana Nurussahar"></div></div>
     <div class="hero-text reveal d1">
       <span class="hi">👋 Halo, saya</span>
       <h1>Midiana Nurussahar</h1>
       <div class="typed"><span id="typed"></span><span class="cursor"></span></div>
-      <p>Mahasiswa D3 Teknologi Informasi yang suka membangun aplikasi web dan mobile, serta tertarik pada keamanan siber. Siap berkolaborasi mewujudkan ide digital menjadi solusi nyata.</p>
-      <div class="btns"><a class="btn primary" href="#proyek">Lihat Proyek</a><a class="btn ghost" href="#kontak">Hubungi Saya</a></div>
+      <p>Mahasiswa D3 Teknologi Informasi yang membangun aplikasi web dan mobile, serta tertarik pada keamanan siber. Terima jasa pembuatan website, aplikasi mobile, CV, dan portofolio.</p>
+      <div class="btns"><a class="btn primary" href="#katalog">Lihat Katalog Jasa</a><a class="btn ghost" href="#proyek">Lihat Proyek</a></div>
       <div class="socials">
-        <a class="gh" href="https://github.com/Dinjawa" target="_blank" rel="noopener" aria-label="GitHub Dinjawa" title="GitHub">
-          <svg viewBox="0 0 24 24"><use href="#i-gh"/></svg>
-        </a>
-        <a class="li" href="https://www.linkedin.com/in/midiana-nurussahar-870799322" target="_blank" rel="noopener" aria-label="LinkedIn Midiana Nurussahar" title="LinkedIn">
-          <svg viewBox="0 0 24 24"><use href="#i-li"/></svg>
-        </a>
-        <a class="ig" href="https://www.instagram.com/careerkitbydiana?lqvp=MTR0aGhsNHhsZWxvMQ==" target="_blank" rel="noopener" aria-label="Instagram Career Kit by Diana" title="Instagram">
-          <svg viewBox="0 0 24 24"><use href="#i-ig"/></svg>
-        </a>
+        <a class="gh" href="https://github.com/Dinjawa" target="_blank" rel="noopener" aria-label="GitHub Dinjawa" title="GitHub"><svg viewBox="0 0 24 24"><use href="#i-gh"/></svg></a>
+        <a class="li" href="https://www.linkedin.com/in/midiana-nurussahar-870799322" target="_blank" rel="noopener" aria-label="LinkedIn Midiana Nurussahar" title="LinkedIn"><svg viewBox="0 0 24 24"><use href="#i-li"/></svg></a>
+        <a class="ig" href="https://www.instagram.com/careerkitbydiana?lqvp=MTR0aGhsNHhsZWxvMQ==" target="_blank" rel="noopener" aria-label="Instagram Career Kit by Diana" title="Instagram"><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg></a>
       </div>
     </div>
   </div>
@@ -316,7 +290,6 @@ footer a:hover{text-decoration:underline}
   <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,50 C360,95 1080,5 1440,50 L1440,80 L0,80 Z"/></svg>
 </header>
 
-<!-- BAGIAN TENGAH -->
 <main class="middle">
   <div class="wrap">
 
@@ -326,7 +299,6 @@ footer a:hover{text-decoration:underline}
       <div class="stat reveal d2"><b class="grad" data-count="11">0</b><span>Keahlian</span></div>
     </div>
 
-    <!-- TENTANG -->
     <section id="tentang">
       <div class="head reveal"><span class="label">Tentang Saya</span><h2>Mengenal lebih dekat</h2></div>
       <div class="two">
@@ -342,7 +314,6 @@ footer a:hover{text-decoration:underline}
       </div>
     </section>
 
-    <!-- KEAHLIAN -->
     <section id="keahlian">
       <div class="head reveal"><span class="label">Keahlian</span><h2>Yang saya kuasai</h2></div>
       <div class="skills">
@@ -369,11 +340,9 @@ footer a:hover{text-decoration:underline}
       </div>
     </section>
 
-    <!-- PENGALAMAN -->
     <section id="pengalaman">
       <div class="head reveal"><span class="label">Pengalaman</span><h2>Perjalanan belajar saya</h2></div>
       <div class="xt">
-
         <div class="xi reveal">
           <span class="tag">Magang</span>
           <h3>Magang Keamanan Siber</h3>
@@ -385,142 +354,101 @@ footer a:hover{text-decoration:underline}
           </ul>
           <div class="chips"><span>Wazuh</span><span>SIEM</span><span>WAF</span><span>OWASP</span><span>Pentest</span></div>
         </div>
-
         <div class="xi reveal">
           <span class="tag">Pelatihan</span>
           <h3>Pelatihan Capture The Flag (CTF)</h3>
           <p class="org">PT Teknologi Server Indonesia (XCode)</p>
-          <ul>
-            <li>Mengikuti pelatihan CTF untuk melatih kemampuan mencari dan mengeksploitasi celah keamanan secara etis.</li>
-          </ul>
+          <ul><li>Mengikuti pelatihan CTF untuk melatih kemampuan mencari dan mengeksploitasi celah keamanan secara etis.</li></ul>
           <div class="chips"><span>CTF</span><span>Cyber Security</span></div>
         </div>
-
         <div class="xi reveal">
           <span class="tag">Pelatihan</span>
           <h3>Pelatihan Junior Development</h3>
           <p class="org">Digital Talent Scholarship (Digitalent) Kominfo</p>
-          <ul>
-            <li>Mengikuti pelatihan pengembangan perangkat lunak tingkat junior melalui program Digitalent dari Kominfo.</li>
-          </ul>
+          <ul><li>Mengikuti pelatihan pengembangan perangkat lunak tingkat junior melalui program Digitalent dari Kominfo.</li></ul>
           <div class="chips"><span>Digitalent</span><span>Kominfo</span><span>Development</span></div>
         </div>
-
       </div>
     </section>
 
-    <!-- PROYEK -->
     <section id="proyek">
       <div class="head reveal"><span class="label">Portofolio</span><h2>Proyek yang pernah saya buat</h2></div>
       <div class="plist">
-
-        <article class="prow reveal">
-          <span class="pno">01</span>
-          <div class="pinfo">
-            <h3>🛡️ Proyek Magang Keamanan Siber</h3>
-            <p>Rangkaian tugas magang: implementasi SIEM Wazuh dan WAF, pengujian kerentanan OWASP, serta penetration testing beserta laporannya.</p>
-            <div class="chips"><span>Wazuh</span><span>WAF</span><span>OWASP</span><span>Pentest</span></div>
-          </div>
-          <div class="pact"><span class="st info">Dokumen internal magang</span></div>
-        </article>
-
-        <article class="prow reveal">
-          <span class="pno">02</span>
-          <div class="pinfo">
-            <h3>📱 Aplikasi Absensi Karyawan QR Code</h3>
-            <p>Aplikasi mobile untuk absensi harian dengan QR Code dan perhitungan gaji, lengkap dengan sisi HRD/admin.</p>
-            <div class="chips"><span>Flutter</span><span>Dart</span><span>Firebase</span></div>
-          </div>
-          <div class="pact"><span class="st priv">Repositori privat</span></div>
-        </article>
-
-        <article class="prow reveal">
-          <span class="pno">03</span>
-          <div class="pinfo">
-            <h3>🔌 REST API Data Karyawan</h3>
-            <p>Web service untuk mengelola data karyawan (tambah, lihat, ubah, hapus), dikerjakan secara berkelompok pada praktikum DevOps &amp; Web Services.</p>
-            <div class="chips"><span>PHP</span><span>MySQL</span><span>REST API</span></div>
-          </div>
-          <div class="pact"><span class="st grp">Proyek kelompok</span></div>
-        </article>
-
-        <article class="prow reveal">
-          <span class="pno">04</span>
-          <div class="pinfo">
-            <h3>🧩 Aplikasi CRM</h3>
-            <p>Aplikasi web CRM (Customer Relationship Management) untuk mengelola data pelanggan dan aktivitas bisnis, dikerjakan secara berkelompok.</p>
-            <div class="chips"><span>Laravel</span><span>Blade</span><span>MySQL</span></div>
-          </div>
-          <div class="pact"><span class="st grp">Proyek kelompok</span></div>
-        </article>
-
-        <article class="prow reveal">
-          <span class="pno">05</span>
-          <div class="pinfo">
-            <h3>✅ Aplikasi To-Do List Android</h3>
-            <p>Aplikasi Android untuk mencatat dan mengelola daftar tugas harian, dibuat dengan Kotlin.</p>
-            <div class="chips"><span>Kotlin</span><span>Android</span></div>
-          </div>
-          <div class="pact">
-            <a href="https://github.com/Rini2815/MyAppToDoList" target="_blank" rel="noopener">MyAppToDoList</a>
-            <a href="https://github.com/Rini2815/todolist" target="_blank" rel="noopener">todolist</a>
-          </div>
-        </article>
-
-        <article class="prow reveal">
-          <span class="pno">06</span>
-          <div class="pinfo">
-            <h3>☁️ Simulasi Data Center Proxmox</h3>
-            <p>Simulasi infrastruktur cloud menggunakan Proxmox di VirtualBox untuk praktikum Cloud Computing.</p>
-            <div class="chips"><span>Proxmox</span><span>VirtualBox</span><span>Cloud</span></div>
-          </div>
-          <div class="pact"><span class="st info">Praktikum Cloud Computing</span></div>
-        </article>
-
+        <article class="prow reveal"><span class="pno">01</span>
+          <div class="pinfo"><h3>🛡️ Proyek Magang Keamanan Siber</h3><p>Rangkaian tugas magang: implementasi SIEM Wazuh dan WAF, pengujian kerentanan OWASP, serta penetration testing beserta laporannya.</p><div class="chips"><span>Wazuh</span><span>WAF</span><span>OWASP</span><span>Pentest</span></div></div>
+          <div class="pact"><span class="st info">Dokumen internal magang</span></div></article>
+        <article class="prow reveal"><span class="pno">02</span>
+          <div class="pinfo"><h3>📱 Aplikasi Absensi Karyawan QR Code</h3><p>Aplikasi mobile untuk absensi harian dengan QR Code dan perhitungan gaji, lengkap dengan sisi HRD/admin.</p><div class="chips"><span>Flutter</span><span>Dart</span><span>Firebase</span></div></div>
+          <div class="pact"><span class="st priv">Repositori privat</span></div></article>
+        <article class="prow reveal"><span class="pno">03</span>
+          <div class="pinfo"><h3>🔌 REST API Data Karyawan</h3><p>Web service untuk mengelola data karyawan (tambah, lihat, ubah, hapus), dikerjakan secara berkelompok pada praktikum DevOps &amp; Web Services.</p><div class="chips"><span>PHP</span><span>MySQL</span><span>REST API</span></div></div>
+          <div class="pact"><span class="st grp">Proyek kelompok</span></div></article>
+        <article class="prow reveal"><span class="pno">04</span>
+          <div class="pinfo"><h3>🧩 Aplikasi CRM</h3><p>Aplikasi web CRM (Customer Relationship Management) untuk mengelola data pelanggan dan aktivitas bisnis, dikerjakan secara berkelompok.</p><div class="chips"><span>Laravel</span><span>Blade</span><span>MySQL</span></div></div>
+          <div class="pact"><span class="st grp">Proyek kelompok</span></div></article>
+        <article class="prow reveal"><span class="pno">05</span>
+          <div class="pinfo"><h3>✅ Aplikasi To-Do List Android</h3><p>Aplikasi Android untuk mencatat dan mengelola daftar tugas harian, dibuat dengan Kotlin.</p><div class="chips"><span>Kotlin</span><span>Android</span></div></div>
+          <div class="pact"><a href="https://github.com/Rini2815/MyAppToDoList" target="_blank" rel="noopener">MyAppToDoList</a><a href="https://github.com/Rini2815/todolist" target="_blank" rel="noopener">todolist</a></div></article>
+        <article class="prow reveal"><span class="pno">06</span>
+          <div class="pinfo"><h3>☁️ Simulasi Data Center Proxmox</h3><p>Simulasi infrastruktur cloud menggunakan Proxmox di VirtualBox untuk praktikum Cloud Computing.</p><div class="chips"><span>Proxmox</span><span>VirtualBox</span><span>Cloud</span></div></div>
+          <div class="pact"><span class="st info">Praktikum Cloud Computing</span></div></article>
       </div>
+    </section>
+
+    <!-- E-KATALOG JASA -->
+    <section id="katalog">
+      <div class="head reveal">
+        <span class="label">E-Katalog</span>
+        <h2>Jasa yang saya tawarkan</h2>
+        <p class="sub">Dari CV dan portofolio dengan harga ramah kantong, sampai website dan aplikasi mobile sesuai kebutuhanmu.</p>
+      </div>
+      <div class="filters reveal" role="group" aria-label="Filter katalog">
+        <button class="fbtn on" data-f="all">Semua</button>
+        <button class="fbtn" data-f="karier">CV &amp; Portofolio</button>
+        <button class="fbtn" data-f="digital">Website &amp; Aplikasi</button>
+      </div>
+
+      <div class="kgrid">
+<article class="kitem reveal" data-c="karier"><span class="ic">📄</span><span class="kcat">CV &amp; Portofolio</span><h3>Jasa Pembuatan CV</h3><p>CV rapi dan ramah ATS, siap dipakai melamar kerja atau magang.</p><ul><li>Desain bersih, 1 halaman</li><li>Dibantu menyusun isi dan kalimat</li><li>File PDF dan Word</li><li>1x revisi gratis</li></ul><div class="price"><s class="old">Rp 25.000</s><span class="now grad">Rp 15.000</span><small class="save">Hemat Rp 10.000</small></div><div class="kact"><a class="k-wa" href="https://wa.me/6285727628569?text=Halo%20Midiana%2C%20saya%20mau%20pesan%20jasa%20pembuatan%20CV." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Pesan via WA</a><a class="k-ig" href="https://www.instagram.com/careerkitbydiana" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg>DM</a></div></article>
+<article class="kitem reveal d1" data-c="karier"><span class="ic">📝</span><span class="kcat">CV &amp; Portofolio</span><h3>Jasa Portofolio Word</h3><p>Portofolio berbentuk dokumen Word/PDF, cocok dilampirkan saat melamar magang atau kerja.</p><ul><li>Format dokumen Word dan PDF</li><li>Berisi profil, skill, proyek, dan sertifikat</li><li>Layout elegan, mudah diedit sendiri</li><li>1x revisi gratis</li></ul><div class="price"><s class="old">Rp 30.000</s><span class="now grad">Rp 20.000</span><small class="save">Hemat Rp 10.000</small></div><div class="kact"><a class="k-wa" href="https://wa.me/6285727628569?text=Halo%20Midiana%2C%20saya%20mau%20pesan%20jasa%20portofolio%20Word." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Pesan via WA</a><a class="k-ig" href="https://www.instagram.com/careerkitbydiana" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg>DM</a></div></article>
+<article class="kitem reveal d2" data-c="karier"><span class="ic">🧑‍💻</span><span class="kcat">CV &amp; Portofolio</span><h3>Jasa Portofolio Web</h3><p>Website portofolio pribadi yang bisa dibuka lewat satu link, tampil keren di HP dan laptop.</p><ul><li>Halaman online dengan link sendiri</li><li>Responsif di HP dan laptop</li><li>Animasi dan tampilan modern</li><li>1x revisi gratis</li></ul><div class="price"><s class="old">Rp 100.000</s><span class="now grad">Rp 75.000</span><small class="save">Hemat Rp 25.000</small></div><div class="kact"><a class="k-wa" href="https://wa.me/6285727628569?text=Halo%20Midiana%2C%20saya%20mau%20pesan%20jasa%20portofolio%20web." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Pesan via WA</a><a class="k-ig" href="https://www.instagram.com/careerkitbydiana" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg>DM</a></div></article>
+<article class="kitem hot reveal" data-c="karier"><span class="badge">Paling hemat</span><span class="ic">🎁</span><span class="kcat">CV &amp; Portofolio</span><h3>Paket CV + Portofolio</h3><p>Paket lengkap untuk fresh graduate dan pencari magang: CV, portofolio Word, dan portofolio web.</p><ul><li>CV ramah ATS</li><li>Portofolio Word dan PDF</li><li>Portofolio Web dengan satu link siap dibagikan</li><li>2x revisi gratis</li></ul><div class="price"><s class="old">Rp 150.000</s><span class="now grad">Rp 100.000</span><small class="save">Hemat Rp 50.000</small></div><div class="kact"><a class="k-wa" href="https://wa.me/6285727628569?text=Halo%20Midiana%2C%20saya%20mau%20pesan%20paket%20CV%20%2B%20Portofolio%20Word%20%2B%20Web." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Pesan via WA</a><a class="k-ig" href="https://www.instagram.com/careerkitbydiana" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg>DM</a></div></article>
+<article class="kitem reveal d1" data-c="digital"><span class="ic">🌐</span><span class="kcat">Website &amp; Aplikasi</span><h3>Jasa Pembuatan Website</h3><p>Company profile, toko online, sistem informasi, atau landing page sesuai permintaan.</p><ul><li>Dibuat sesuai kebutuhan</li><li>Responsif dan memperhatikan keamanan</li><li>Bisa dilengkapi database dan admin</li></ul><div class="price ask grad">Harga sesuai kebutuhan<small>tanya langsung lewat WA atau DM</small></div><div class="kact"><a class="k-wa" href="https://wa.me/6285727628569?text=Halo%20Midiana%2C%20saya%20mau%20tanya%20harga%20pembuatan%20website." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Tanya via WA</a><a class="k-ig" href="https://www.instagram.com/careerkitbydiana" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg>DM</a></div></article>
+<article class="kitem reveal d2" data-c="digital"><span class="ic">📱</span><span class="kcat">Website &amp; Aplikasi</span><h3>Jasa Aplikasi Mobile</h3><p>Aplikasi Android atau lintas platform dengan Flutter atau Kotlin, dari ide sampai jadi.</p><ul><li>Absensi, kasir, to-do, dan lainnya</li><li>Terhubung ke API dan Firebase</li><li>Konsultasi kebutuhan gratis</li></ul><div class="price ask grad">Harga sesuai kebutuhan<small>tanya langsung lewat WA atau DM</small></div><div class="kact"><a class="k-wa" href="https://wa.me/6285727628569?text=Halo%20Midiana%2C%20saya%20mau%20tanya%20harga%20pembuatan%20aplikasi%20mobile." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Tanya via WA</a><a class="k-ig" href="https://www.instagram.com/careerkitbydiana" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg>DM</a></div></article>
+</div>
+
+      <div class="kcta reveal"><span class="ic">💬</span><h3>Punya ide lain?</h3><p>Belum ada yang pas? Ceritakan idemu, nanti kita cari solusi dan harga yang cocok. Konsultasi gratis tanpa komitmen.</p><div class="kact"><a class="k-wa" href="https://wa.me/6285727628569?text=Halo%20Midiana%2C%20saya%20mau%20konsultasi." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>Konsultasi via WA</a></div></div>
+
+      <div class="how reveal">
+        <div><b>1. Hubungi</b><span>Chat lewat WA atau DM Instagram</span></div>
+        <div><b>2. Diskusi</b><span>Ceritakan kebutuhan, sepakati harga</span></div>
+        <div><b>3. Selesai</b><span>Hasil dikirim, revisi sesuai paket</span></div>
+      </div>
+      <p class="knote reveal">Harga promo CV dan portofolio dibuat terjangkau untuk pelajar dan mahasiswa, berlaku selama promo. Harga website dan aplikasi mobile ditentukan setelah diskusi kebutuhan.</p>
     </section>
   </div>
 </main>
 
-<!-- KONTAK & SOSIAL (satu bagian) -->
 <div class="contact" id="kontak">
   <div class="wrap">
     <div class="reveal">
       <span class="label">Kontak</span>
       <h2>Yuk, ngobrol dan berkolaborasi!</h2>
-      <p class="lead">Punya proyek, pertanyaan, atau ingin berkolaborasi? Kirim pesan langsung lewat WhatsApp.</p>
+      <p class="lead">Mau pesan jasa, punya proyek, atau sekadar bertanya? Kirim pesan langsung lewat WhatsApp.</p>
       <a class="wa" href="https://wa.me/6285727628569?text=Halo%20Midiana%2C%20saya%20melihat%20landing%20page%20kamu.%20Boleh%20kita%20ngobrol%3F" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.12c-.25.69-1.43 1.32-1.97 1.37-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.6-2.9-1.25-4.8-4.17-4.95-4.37-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.25.58.83 2.01.9 2.16.07.14.12.31.02.5-.1.2-.14.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.3-.12.58.17.29.74 1.22 1.59 1.97 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.91-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.22.55.34.07.12.07.7-.18 1.39z"/></svg>
-        Hubungi Saya via WhatsApp
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Hubungi Saya via WhatsApp
       </a>
     </div>
-
     <div class="or reveal">atau temukan saya di</div>
-
     <div class="soc-grid">
-      <a class="soc gh reveal" href="https://github.com/Dinjawa" target="_blank" rel="noopener">
-        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-gh"/></svg></span>
-        <span class="txt"><b>GitHub</b><small>@Dinjawa · kode &amp; proyek</small></span>
-        <span class="go" aria-hidden="true">→</span>
-      </a>
-      <a class="soc li reveal" href="https://www.linkedin.com/in/midiana-nurussahar-870799322" target="_blank" rel="noopener">
-        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-li"/></svg></span>
-        <span class="txt"><b>LinkedIn</b><small>Midiana Nurussahar · profil profesional</small></span>
-        <span class="go" aria-hidden="true">→</span>
-      </a>
-      <a class="soc ig reveal" href="https://www.instagram.com/careerkitbydiana?lqvp=MTR0aGhsNHhsZWxvMQ==" target="_blank" rel="noopener">
-        <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg></span>
-        <span class="txt"><b>Instagram</b><small>@careerkitbydiana · konten &amp; promosi</small></span>
-        <span class="go" aria-hidden="true">→</span>
-      </a>
+      <a class="soc gh reveal" href="https://github.com/Dinjawa" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-gh"/></svg></span><span class="txt"><b>GitHub</b><small>@Dinjawa · kode &amp; proyek</small></span><span class="go" aria-hidden="true">→</span></a>
+      <a class="soc li reveal" href="https://www.linkedin.com/in/midiana-nurussahar-870799322" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-li"/></svg></span><span class="txt"><b>LinkedIn</b><small>Midiana Nurussahar · profil profesional</small></span><span class="go" aria-hidden="true">→</span></a>
+      <a class="soc ig reveal" href="https://www.instagram.com/careerkitbydiana?lqvp=MTR0aGhsNHhsZWxvMQ==" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg></span><span class="txt"><b>Instagram</b><small>@careerkitbydiana · konten &amp; promosi</small></span><span class="go" aria-hidden="true">→</span></a>
     </div>
   </div>
 </div>
 
-<!-- tombol WA melayang -->
-<a class="wa-float" id="waFloat" href="https://wa.me/6285727628569?text=Halo%20Midiana%2C%20saya%20melihat%20landing%20page%20kamu." target="_blank" rel="noopener" aria-label="Chat WhatsApp">
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.12c-.25.69-1.43 1.32-1.97 1.37-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.6-2.9-1.25-4.8-4.17-4.95-4.37-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.26-.29.57-.36.76-.36l.55.01c.18 0 .42-.07.65.5.25.58.83 2.01.9 2.16.07.14.12.31.02.5-.1.2-.14.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.3-.12.58.17.29.74 1.22 1.59 1.97 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.91-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.22.55.34.07.12.07.7-.18 1.39z"/></svg>
-</a>
+<a class="wa-float" id="waFloat" href="https://wa.me/6285727628569?text=Halo%20Midiana%2C%20saya%20melihat%20landing%20page%20kamu." target="_blank" rel="noopener" aria-label="Chat WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg></a>
 
 <footer>
   © 2026 Midiana Nurussahar · Politeknik Negeri Madiun<br>
@@ -528,18 +456,14 @@ footer a:hover{text-decoration:underline}
 </footer>
 
 <script>
-// progress bar + sembunyikan tombol WA melayang di area kontak
-const bar = document.getElementById('progress');
-const waFloat = document.getElementById('waFloat');
-const contact = document.getElementById('kontak');
+const bar = document.getElementById('progress'), waFloat = document.getElementById('waFloat'), contact = document.getElementById('kontak');
 addEventListener('scroll', () => {
   const h = document.documentElement;
   bar.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
   waFloat.classList.toggle('hide', contact.getBoundingClientRect().top < innerHeight - 120);
 }, { passive: true });
 
-// efek mengetik
-const roles = ['Web Developer Enthusiast', 'Mobile App Developer', 'Cyber Security Learner'];
+const roles = ['Web Developer Enthusiast', 'Mobile App Developer', 'Cyber Security Learner', 'Jasa Website, App, CV & Portofolio'];
 const el = document.getElementById('typed');
 let r = 0, c = 0, del = false;
 (function type() {
@@ -551,7 +475,6 @@ let r = 0, c = 0, del = false;
   else { del = false; r = (r + 1) % roles.length; setTimeout(type, 300); }
 })();
 
-// animasi muncul saat scroll + skill bar + counter
 const io = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (!e.isIntersecting) return;
@@ -568,7 +491,13 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 document.querySelectorAll('.reveal').forEach(x => io.observe(x));
 
-// menu aktif sesuai posisi scroll
+// filter katalog
+const fbtns = document.querySelectorAll('.fbtn'), kitems = document.querySelectorAll('.kitem');
+fbtns.forEach(b => b.addEventListener('click', () => {
+  fbtns.forEach(x => x.classList.toggle('on', x === b));
+  kitems.forEach(k => { k.hidden = b.dataset.f !== 'all' && k.dataset.c !== b.dataset.f; k.classList.add('show'); });
+}));
+
 const links = document.querySelectorAll('.menu a');
 const spy = new IntersectionObserver((entries) => {
   entries.forEach(e => {
@@ -577,7 +506,6 @@ const spy = new IntersectionObserver((entries) => {
 }, { rootMargin: '-45% 0px -50% 0px' });
 document.querySelectorAll('header[id], section[id], .contact[id]').forEach(s => spy.observe(s));
 
-// background jaringan partikel
 (function () {
   const cv = document.getElementById('bg'), ctx = cv.getContext('2d');
   const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
